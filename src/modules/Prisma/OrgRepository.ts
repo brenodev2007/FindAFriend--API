@@ -18,4 +18,8 @@ export class PrismaOrgRepository implements IOrgRepository {
   async findByEmail(email: string): Promise<Org | null> {
     return prisma.org.findUnique({ where: { email } });
   }
+
+  async findByWhatsApp(whatsapp: string): Promise<Org | null> {
+    return prisma.org.findUnique({ where: { whatsapp } });
+  }
 }
