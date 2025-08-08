@@ -8,6 +8,13 @@ export class PrismaOrgRepository implements IOrgRepository {
     return prisma.org.create({ data });
   }
 
+  async login(email: string, password: string): Promise<Org | null> {
+    return prisma.org.findUnique({ where: { email } }).then((org) => {
+      if (!org) return null;
+      return org;
+    });
+  }
+
   async findByEmail(email: string): Promise<Org | null> {
     return prisma.org.findUnique({ where: { email } });
   }
