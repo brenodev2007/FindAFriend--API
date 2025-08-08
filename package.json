@@ -1,0 +1,28 @@
+{
+  "name": "findafriend--api",
+  "version": "1.0.0",
+  "description": "- [] Deve ser possível cadastrar um pet - [] Deve ser possível listar todos os pets disponíveis para adoção em uma cidade - [] Deve ser possível filtrar pets por suas características - [] Deve ser possível visualizar detalhes de um pet para adoção - [] Deve ser possível se cadastrar como uma ORG - [] Deve ser possível realizar login como uma ORG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.13.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.13.0"
+  }
+}
