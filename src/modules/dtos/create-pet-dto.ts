@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const createPetSchema = z.object({
+export const createPetDTO = z.object({
   name: z.string().min(3),
   city: z.string().nullable(),
   description: z.string().min(6).nullish(),
@@ -10,4 +10,4 @@ export const createPetSchema = z.object({
   independency: z.string().nullish(),
 });
 
-export type CreateOrgDTO = z.infer<typeof createPetSchema>;
+export type createPetDTO = z.infer<typeof createPetDTO>;

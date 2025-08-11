@@ -29,7 +29,7 @@ model Pet {
   name        String
   city        String
   description String
-  age         String
+  age         Int
   size        String
   energyLevel String
   independency String
